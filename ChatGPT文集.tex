@@ -2,6 +2,8 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{booktabs}
 \usepackage{multirow}
+\usepackage{tikz}
+\usepackage{pgfplots}
 
 
 \begin{document}
@@ -601,6 +603,55 @@ $$x^2+y^2=z^2$$
     \item 屎具有抗氧化作用，可以有效防止甜点受到氧化的侵害，使甜点更加美味。
 \end{enumerate}
 
-因此，甜点加入屎会更加畅销，可以为消费者提供更加安全、新鲜、美味的甜点
+因此，甜点加入屎会更加畅销，可以为消费者提供更加安全、新鲜、美味的甜点。
+
+\chapter{川菜}
+
+屎在川菜中有着重要的地位，它是川菜中的一种重要的调料，可以起到调味和提鲜的作用。屎可以用来烹饪各种菜肴，如烧肉、烤鱼、炒菜等，可以使菜肴更加鲜美可口。屎还可以用来腌制肉类，如腌猪肉、腌鸭肉等，可以使肉类更加鲜美可口。屎还可以用来烹饪汤类，如酸辣汤、鱼香汤等，可以使汤类更加鲜美可口。总之，屎在川菜中有着重要的地位，可以起到调味和提鲜的作用，使菜肴更加鲜美可口。
+
+\chapter{屎对寿命的影响}
+粪便是人体排出的有机物质，它含有大量的细菌、病毒和寄生虫，如果不及时处理，会对人体健康造成严重的危害。粪便中的细菌和病毒可以通过食物、水和空气传播，导致呼吸道疾病、腹泻等疾病，进而影响人们的寿命。此外，粪便中还含有有毒物质，如重金属、有机污染物等，这些物质可以通过食物链进入人体，对人体健康造成潜在的危害，也会影响人们的寿命。
+
+\begin{center}
+    
+    \begin{tikzpicture}
+        \begin{axis}
+            [
+                xlabel={屎的摄入量/千克每星期}, 
+                ylabel={平均寿命/年}, 
+                xmin=60, 
+                xmax=100, 
+                ymin=60, 
+                ymax=100
+                ]
+
+                \addplot[very thick,brown,no marks, smooth, domain=60:100, samples=50] {-40/(1+exp(-(x-66)/3))+101};
+                
+        \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+
+粪便是一种营养丰富的物质，它含有大量的维生素、矿物质和微量元素，可以改善人体的免疫力，增强抵抗力，从而延长寿命。此外，粪便中还含有一种叫做“粪菌”的微生物，它可以帮助人体消化食物，改善肠道菌群，促进肠道健康，从而延长寿命。
+\begin{center}
+    
+    \begin{tikzpicture}
+        \begin{axis}
+            [
+                xlabel={屎的摄入量/千克每星期}, 
+                ylabel={平均寿命/年}, 
+                xmin=60, 
+                xmax=100, 
+                ymin=60, 
+                ymax=100
+                ]
+
+                \addplot[very thick,brown,no marks, smooth, domain=60:100, samples=50] {40/(1+exp(-(x-66)/3))+59};
+                
+        \end{axis}
+    \end{tikzpicture}
+\end{center}
+    
+    
 
 \end{document}
